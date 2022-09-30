@@ -145,11 +145,41 @@
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="number" class="form-control" name="id-number" id="id-number" placeholder="Your Id Number" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="number" class="form-control" name="phone-number" id="phone-number" placeholder="Your Contact No" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <label for="subject">Subject:</label>
+                  <select name="subject" id="subject">
+                    <optgroup label="Financial Advisory">
+                      <option value="Personal Financing">Personal Financing</option>
+                      <option value="Business Financing">Business Financing</option>
+                      <option value="AKPK">AKPK</option>
+                      <option value="Property Financing">Property Financing</option>
+                      <option value="Credit Cards">Credit Cards</option>
+                      <option value="Wealth Enhancement">Wealth Enhancement</option>
+                      <option value="Government Grants">Government Grants</option>
+                    </optgroup>
+                    <optgroup label="Legal Advice">
+                      <option value="Property Caveat">Property Caveat</option>
+                      <option value="Friendly Loan Arrangement">Friendly Loan Arrangement</option>
+                      <option value="Will & Trust">Wil & Trust</option>
+                      <option value="Profile Monitoring">Profile Monitoring</option>
+                    </optgroup>
+                    <optgroup label="Incorporation">
+                      <option value="Corporate Strategy">Corporate Strategy</option>
+                      <option value="Crowdfunding">Crowdfunding</option>
+                      <option value="Will & Trust">Will & Trust</option>
+                    </optgroup>
+                  </select>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -164,7 +194,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center mt-3"><button class="btn btn-primary" type="submit">Send Message</button></div>
             </form>
 
           </div><!-- End Contact Form -->
