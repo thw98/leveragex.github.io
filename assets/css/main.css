@@ -1074,6 +1074,7 @@ section {
   min-height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services-cards .card-item .card-body {
